@@ -1,0 +1,23 @@
+#################################################################
+############### gitCommon      ##################################
+#################################################################
+gitRoot="$proj/myGits"
+## add ssh keys to each shell //TODO:dontLIKE fix
+ssh-add /.../gitKey_private_github 1>/dev/null 2>/dev/null
+ssh-add /.../gitKey_private_gitlab 1>/dev/null 2>/dev/null
+alias gitkeys="ssh-add -l"
+alias gitstat="git status -s"
+alias gitall="$gitScripts/statusOnAll.sh $gitRoot"
+alias gitup='git add . ; git commit -m "auto update" ; git push'
+#################################################################
+############### github :: hub  ##################################
+#################################################################
+alias mygit='clear; cd $gitRoot ; tit "my-gits" '
+alias git.ls="curl -s  https://api.github.com/users/XXXXXXX/repos | grep -o 'git@[^\"]*' "
+alias git.ZZZ='clear ; tit "XXXXX::sysgit" ; cd $gitRoot/ZZZ/'
+#################################################################
+############### gitlab :: lab  ##################################
+#################################################################
+alias mylab='cc;cd /YYYYYY/ ; tit "gitlabs-linked-repos" '
+alias lab.ls="gitlab project list"
+alias lab.new="$gitScripts/newGitlabRepoCreate.sh $1"

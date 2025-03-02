@@ -51,16 +51,16 @@ set_from_resource $i3-wm.binding. i3-wm.binding.
 # These are the labels which define each i3 workspace.
 ###############################################################################
 
-set_from_resource $ws1  i3-wm.workspace.01.name "1 1.lectAI"
-set_from_resource $ws2  i3-wm.workspace.02.name "2 2.selfAI"
-set_from_resource $ws3  i3-wm.workspace.03.name "3 3.tinyAI"
-set_from_resource $ws4  i3-wm.workspace.04.name "4 4.web"
-set_from_resource $ws5  i3-wm.workspace.05.name "5 5.fll"
-set_from_resource $ws6  i3-wm.workspace.06.name "6 6.res1"
-set_from_resource $ws7  i3-wm.workspace.07.name "7 7.res2"
-set_from_resource $ws8  i3-wm.workspace.08.name "8 8.res3"
-set_from_resource $ws9  i3-wm.workspace.09.name "9 9.res4"
-set_from_resource $ws10 i3-wm.workspace.10.name "10 10.res5"
+set_from_resource $ws1  i3-wm.workspace.01.name "1: 1.web"
+set_from_resource $ws2  i3-wm.workspace.02.name "2: 2.readAI"
+set_from_resource $ws3  i3-wm.workspace.03.name "3: 3.tinyAI"
+set_from_resource $ws4  i3-wm.workspace.04.name "4: 4.FPGA"
+set_from_resource $ws5  i3-wm.workspace.05.name "5: 5.H8AI"
+set_from_resource $ws6  i3-wm.workspace.06.name "6: 6.Sony"
+set_from_resource $ws7  i3-wm.workspace.07.name "7: 7.res1"
+set_from_resource $ws8  i3-wm.workspace.08.name "8: 8.res2"
+set_from_resource $ws9  i3-wm.workspace.09.name "9: 9.res3"
+set_from_resource $ws10 i3-wm.workspace.10.name "10: 10.res4"
 set_from_resource $ws11 i3-wm.workspace.11.name "11"
 set_from_resource $ws12 i3-wm.workspace.12.name "12"
 set_from_resource $ws13 i3-wm.workspace.13.name "13"
@@ -692,16 +692,16 @@ bindsym $mod+Insert exec --no-startup-id i3-msg workspace $(i3-msg -t get_worksp
 ## add lock for win+l
 bindsym $mod+l exec "gsettings set org.gnome.desktop.input-sources current 0 ; xtrlock "
 
-bindsym F1 workspace number 1
-bindsym F2 workspace number 2
-bindsym F3 workspace number 3
-bindsym F4 workspace number 4
-bindsym F5 workspace number 5
-bindsym F6 workspace number 6
-bindsym F7 workspace number 7
-bindsym F8 workspace number 8
-bindsym F9 workspace number 9
-bindsym F10 workspace number 10
+bindsym F1 workspace number $ws1
+bindsym F2 workspace number $ws2
+bindsym F3 workspace number $ws3
+bindsym F4 workspace number $ws4
+bindsym F5 workspace number $ws5
+bindsym F6 workspace number $ws6
+bindsym F7 workspace number $ws7
+bindsym F8 workspace number $ws8
+bindsym F9 workspace number $ws9
+bindsym F10 workspace number $ws10
 
 
 

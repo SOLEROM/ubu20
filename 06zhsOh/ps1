@@ -1,0 +1,30 @@
+# ps1 on different shells
+
+
+```
+
+if [ `echo $0` == bash ] ; then
+	#colorize
+	source $bashColor
+	PS1="\[$txtblu\]\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$\[$txtrst\] "
+	if [ `whoami` == root ]
+	then
+	PS1="\[$txtblu\]\[\e]0;\u@\h: \w\a\]\[$txtred\]${debian_chroot:+($debian_chroot)}\u@\[$txtblu\]\h:\w\$\[$txtrst\] "
+	else
+	PS1="\[$txtblu\]\[\e]0;\u@\h: \w\a\]\[$txtylw\]${debian_chroot:+($debian_chroot)}\u@\[$txtblu\]\h:\w\$\[$txtrst\] "
+	fi
+	alias ps1sht='export PROMPT_DIRTRIM=1'
+	alias ps1wht='PS1="\[$txtwht\]\[\e]0;\u@\h: \w\a\]\[$txtwht\]${debian_chroot:+($debian_chroot)}\u@\[$txtwht\]\h:\w\$\[$txtrst\] "'
+fi
+
+
+
+if [ `echo $0` == zsh ] ; then
+echo "loaded my aliases for zsh"
+
+
+
+fi
+
+
+```
