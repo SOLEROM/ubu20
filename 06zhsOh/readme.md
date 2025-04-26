@@ -328,3 +328,8 @@ Before you scream Oh My Zsh! please look over the ~/.zshrc file to select plugin
 ```
 
 
+
+
+# more settings
+
+https://dev.to/kumareth/a-beginner-s-guide-for-setting-up-autocomplete-on-ohmyzsh-hyper-with-plugins-themes-47f2

@@ -1,0 +1,8 @@
+
+
+
+add Pylance
+	ctrl + ','
+	type 	"extrapaths"
+	chose  	"add element"
+	add path

@@ -1,17 +1,22 @@
-# ubu18-configs
+# ubu20-configs
 
-* 01[gnome](01gnome/readme.md)
-* 02[aliases](02alias/readme.md)
-* 03[configs](03config18/readme.md)
-* 04[newAt18](04newAt18/readme.md)
-* 05[swInstall](05swInstall/readme.md)
-* 06[06zhsOh](06zhsOh)
-* 07[07nnn](07nnn)
-* 08[08conkey](08conkey)
-* 09[09guake](09guake)
-* 10[10spaceVIM](10spaceVIM)
-* 11[11firefox](11firefox)
-* 12[12sshTools](12sshTools)
-* 13[13fonts](13fonts)
+### tools
+* [tools from repo](./05swInstall/repoTools.md)
+* [local tools](./05swInstall/localTools.md)
+### xorg
+* [i3-regolight](./00RegolithI3/readme.md)
 
+### myConfs
+* [tasker stack](./01_scripts/tasks/readme.md)
+* [use maps for ll](./01_scripts/maps/mapls.sh)
 
+some special aliases tit/name
+
+### sync and bk
+* [sync with phone](./03_sync/readme.md)
+
+### km
+* [notes with obsidian](./05swInstall/obsidian.md)
+
+### code
+* [vsCode confs](./16vsCode/readme.md)

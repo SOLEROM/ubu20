@@ -1,0 +1,17 @@
+
+
+
+merge from main on local
+========================
+git pull origin main
+
+
+update on main all branches
+===========================
+git fetch -a
+
+
+
+compare between local branch and remote one
+===========================================
+git difftool  <branch>:./<path>  <path>

@@ -1,0 +1,27 @@
+
+
+
+get docker store path:
+			docker info | grep "Docker Root Dir"                  
+
+check space:
+			sudo du -h <path_root_dir> | tail -1
+
+## in case of snap:
+
+(/var/snap/docker/common/var-lib-docker) suggests that Docker is installed via Snap. When Docker is installed via Snap, its configuration and storage paths are managed differently than a traditional package installation.
+
+sudo snap stop docker
+sudo mkdir -p /data/docker
+sudo ln -s /data/docker /var/snap/docker/common/var-lib-docker
+sudo snap start docker
+
+conf
+	sudo vi  /lib/systemd/system/docker.service
+
+
+cleanup
+	docker system prune -a -f --volumes
+
+
+for cuda https://developer.nvidia.com/blog/nvidia-docker-gpu-server-application-deployment-made-easy/

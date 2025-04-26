@@ -8,7 +8,7 @@ curDir="$(cd "$(dirname "$0")" && pwd)"
 
 $curDir/scrLay0.sh lpt
 
-i3-msg workspace number 1, move workspace to output $top
-i3-msg workspace number 2, move workspace to output $wide
+i3-msg workspace number 5, move workspace to output $top
+i3-msg workspace number 6, move workspace to output $wide
 
 i3-msg workspace $curName
