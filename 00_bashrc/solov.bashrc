@@ -27,6 +27,7 @@ alias tmp30='cc; cd $data/tmp30 ; tit "tmp30" '
 alias tiny='cd $data/tinyai ; source $data/tinyai/.alias ; tit "tiny" '
 alias solai='cd $data/solai  ; source $data/solai/sys/aliases ; tit "sol-ai" '
 
+alias max='cd $data/tinyai ; source $tasks_script /data/tinyai/taskit_max'
 
 
 #################################################################
@@ -78,6 +79,9 @@ alias ll="$bashScripts/maps/mapls.sh "
 tasks_script="$bashScripts/tasks/projList.source"
 alias pp='source $tasks_script /data/.taskit'
 alias ppe='[ -f .taskit ] && vi .taskit || vi /data/.taskit'
+alias todo="cd /data/todo ; clear ; ls"
+alias tt='source /data/sysadmin/01_scripts/tasks/matrixList.sh /data/todo'
+
 
 #################################################################
 ######################## clipboard  #############################
@@ -97,7 +101,6 @@ alias topmem=topMem
 alias mm=topMem
 ## for 5 sec
 alias topCpu="timeout 5 top -b -d 1 -c | awk '\$1 ~ /^[0-9]+$/ && \$9>70 {print \"Process ID: \" \$1, \"CPU Usage: \" \$9 \"%\", \"Command: \" substr(\$0, index(\$0,\$12))}'"
-alias tt=topCpu
 
 #################################################################
 ######################## PS1 ####################################
@@ -304,4 +307,15 @@ alias dok_limits="$bashScripts/limits/getLimits_unAutor.sh"
 ######################## code    ################################
 alias vv='cscope -R'
 
+
+
+#################################################################
+########################  LXC    ################################
+alias lx.spin='/data/myGits/venv/rootDeploy/lxcInfra/spinIT.sh'
+alias lx.help='cc; cat /data/myGits/venv/rootDeploy/lxcInfra/myMan.md'
+alias lx.size='/data/myGits/venv/rootDeploy/lxcInfra/listSizes.sh'
+
+#################################################################
+########################  ros   ################################
+alias ros='cc;cd /data/ros ; source ros.alias'
 
